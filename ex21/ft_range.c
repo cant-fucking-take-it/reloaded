@@ -6,7 +6,7 @@
 /*   By: ecoma-ba <ecoma-ba@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/03 19:23:16 by ecoma-ba          #+#    #+#             */
-/*   Updated: 2024/06/07 13:30:09 by ecoma-ba         ###   ########.fr       */
+/*   Updated: 2024/06/07 15:35:11 by ecoma-ba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,7 @@ int	*ft_range(int min, int max)
 		return (0);
 	range = malloc(size * 4);
 	if (range == 0)
-	{
-		errno = ENOMEM;
 		return (0);
-	}
 	index = 0;
 	while (index < size)
 	{
