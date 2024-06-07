@@ -11,7 +11,7 @@ vpath %.h $(HDR_DIR)
 OUT = libft.a
 
 CC = cc
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -I $(HDR_DIR) 
 
 all:  $(OUT)
 
@@ -19,7 +19,7 @@ $(OUT): $(OBJ_FILES)
 	ar rc $@ $(OBJ_FILES:%=$(SRC_DIR)/%)
 
 $(OBJ_FILES): %.o:%.c $(HDR_FILES)
-	$(CC) $(CFLAGS) -I $(HDR_DIR) -c -o $(<D)/$@ $<
+#	$(CC) $(CFLAGS) -c -o $(<D)/$@ $<
 
 clean reclean:
 	rm -f $(OBJ_FILES:%=$(SRC_DIR)/%)

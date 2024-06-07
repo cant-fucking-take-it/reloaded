@@ -6,7 +6,7 @@
 /*   By: ecoma-ba <ecoma-ba@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 11:13:49 by ecoma-ba          #+#    #+#             */
-/*   Updated: 2024/04/24 11:19:55 by ecoma-ba         ###   ########.fr       */
+/*   Updated: 2024/06/07 13:08:14 by ecoma-ba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_print_numbers(void)
 	while (i < 10)
 	{
 		to_write = 48 + i;
-		write(1, &to_write, 1);
+		ft_putchar(to_write);
 		i++;
 	}
 }

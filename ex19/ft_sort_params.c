@@ -6,7 +6,7 @@
 /*   By: ecoma-ba <ecoma-ba@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/02 14:21:10 by ecoma-ba          #+#    #+#             */
-/*   Updated: 2024/05/02 18:58:50 by ecoma-ba         ###   ########.fr       */
+/*   Updated: 2024/06/07 13:12:42 by ecoma-ba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,10 +66,9 @@ void	ft_putstr(char *str)
 {
 	while (*str != '\0')
 	{
-		write(1, str, 1);
+		ft_putchar(*str);
 		str++;
 	}
-	write(1, "\n", 1);
 }
 
 int	main(int argc, char **argv)

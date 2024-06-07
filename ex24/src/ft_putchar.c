@@ -1,25 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ecoma-ba <ecoma-ba@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/24 11:24:47 by ecoma-ba          #+#    #+#             */
-/*   Updated: 2024/06/07 13:08:52 by ecoma-ba         ###   ########.fr       */
+/*   Created: 2024/04/24 10:15:45 by ecoma-ba          #+#    #+#             */
+/*   Updated: 2024/04/24 10:32:31 by ecoma-ba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_is_negative(int n)
+void	ft_putchar(char c)
 {
-	if (n < 0)
-	{
-		ft_putchar('N');
-	}
-	else
-	{
-		ft_putchar('P');
-	}
+	write(1, &c, 1);
 }
