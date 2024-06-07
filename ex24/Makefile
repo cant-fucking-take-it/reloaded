@@ -1,7 +1,7 @@
 OBJ_FILES = ft_putchar.o ft_swap.o ft_putstr.o ft_strlen.o ft_strcmp.o
 HDR_FILES = ft.h
 
-SRC_DIR = src
+SRC_DIR = srcs
 HDR_DIR = includes
 
 vpath %.c $(SRC_DIR)
@@ -11,18 +11,18 @@ vpath %.h $(HDR_DIR)
 OUT = libft.a
 
 CC = cc
-CFLAGS = -Wall -Wextra -Werror -I $(HDR_DIR) 
+CFLAGS = -Wall -Wextra -Werror -I $(HDR_DIR)
 
-all:  $(OUT)
+all: $(OUT)
 
 $(OUT): $(OBJ_FILES) $(HDR_FILES)
-	ar rc $@ $(OBJ_FILES:%=$(SRC_DIR)/%)
+#	ar rc $@ $?
 
-$(OBJ_FILES): %.o:%.c 
-	$(CC) $(CFLAGS) -c -o $(<D)/$@ $<
+$(addprefix $(SRC_DIR)/, $(OBJ_FILES)): %.o:%.c 
+	$(CC) $(CFLAGS) -c $< -o $@ 
 
 clean reclean:
-	rm -f $(OBJ_FILES:%=$(SRC_DIR)/%)
+	rm -f $(addprefix $(SRC_DIR)/, $(OBJ_FILES))
 
 fclean: clean
 	rm -f $(OUT)
