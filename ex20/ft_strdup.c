@@ -6,12 +6,11 @@
 /*   By: ecoma-ba <ecoma-ba@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/03 19:05:02 by ecoma-ba          #+#    #+#             */
-/*   Updated: 2024/05/09 13:29:23 by ecoma-ba         ###   ########.fr       */
+/*   Updated: 2024/06/07 13:35:34 by ecoma-ba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include <sys/errno.h>
 
 char	*ft_strdup(char *src)
 {

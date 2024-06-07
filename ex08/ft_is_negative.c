@@ -6,11 +6,9 @@
 /*   By: ecoma-ba <ecoma-ba@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 11:24:47 by ecoma-ba          #+#    #+#             */
-/*   Updated: 2024/06/07 13:08:52 by ecoma-ba         ###   ########.fr       */
+/*   Updated: 2024/06/07 13:32:20 by ecoma-ba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
 
 void	ft_is_negative(int n)
 {

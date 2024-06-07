@@ -6,11 +6,9 @@
 /*   By: ecoma-ba <ecoma-ba@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/02 12:26:56 by ecoma-ba          #+#    #+#             */
-/*   Updated: 2024/06/07 13:10:27 by ecoma-ba         ###   ########.fr       */
+/*   Updated: 2024/06/07 13:32:31 by ecoma-ba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
 
 void	ft_putstr(char *str)
 {

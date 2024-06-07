@@ -6,11 +6,9 @@
 /*   By: ecoma-ba <ecoma-ba@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 10:37:33 by ecoma-ba          #+#    #+#             */
-/*   Updated: 2024/06/07 13:07:44 by ecoma-ba         ###   ########.fr       */
+/*   Updated: 2024/06/07 13:28:17 by ecoma-ba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
 
 void	ft_print_alphabet(void)
 {
