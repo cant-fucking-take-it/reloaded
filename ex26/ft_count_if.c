@@ -6,16 +6,16 @@
 /*   By: ecoma-ba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/06 10:24:13 by ecoma-ba          #+#    #+#             */
-/*   Updated: 2024/06/07 13:22:10 by ecoma-ba         ###   ########.fr       */
+/*   Updated: 2024/06/07 14:26:23 by ecoma-ba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_count_if(char **tab, int length, int (*f)(char *))
+int	ft_count_if(char **tab, int (*f)(char *))
 {
 	int	count;
 
 	count = 0;
-	while (length-- > 0)
+	while (*tab != 0)
 	{
 		if (f(*tab) == 1)
 			count++;
