@@ -15,10 +15,10 @@ CFLAGS = -Wall -Wextra -Werror -I $(HDR_DIR)
 
 all:  $(OUT)
 
-$(OUT): $(OBJ_FILES)
+$(OUT): $(OBJ_FILES) $(HDR_FILES)
 	ar rc $@ $(OBJ_FILES:%=$(SRC_DIR)/%)
 
-$(OBJ_FILES): %.o:%.c $(HDR_FILES)
+$(OBJ_FILES): %.o:%.c 
 	$(CC) $(CFLAGS) -c -o $(<D)/$@ $<
 
 clean reclean:
