@@ -16,7 +16,7 @@ CFLAGS = -Wall -Wextra -Werror -I $(HDR_DIR)
 all: $(OUT)
 
 $(OUT): $(OBJ_FILES) $(HDR_FILES)
-#	ar rc $@ $?
+	ar rc $@ $?
 
 $(addprefix $(SRC_DIR)/, $(OBJ_FILES)): %.o:%.c 
 	$(CC) $(CFLAGS) -c $< -o $@ 
